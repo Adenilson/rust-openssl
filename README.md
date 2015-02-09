@@ -25,8 +25,8 @@ involved, but it *is* possible to build rust-openssl successfully on Windows.
 ###Windows
 
 1. Grab the latest Win32 OpenSSL installer [here][1]. At the time of this
-   writing, it's v1.0.1i. If you're using 64-bit Rust (coming to Windows soon),
-then you should get the Win64 installer instead.
+   writing, it's v1.0.1l. If you're using 64-bit Rust, then you should get the
+   Win64 installer instead.
 2. Run the installer, making note of where it's installing OpenSSL. The option
    to copy the libraries to the Windows system directory or `[OpenSSL
 folder]/bin` is your choice. The latter is probably preferable, and the
@@ -36,8 +36,6 @@ default.
 Rust install's libs folder. The default should be:
   * 32-bit: `C:\Program Files (x86)\Rust\bin\rustlib\i686-pc-mingw32\lib`
   * 64-bit: `C:\Program Files (x86)\Rust\bin\rustlib\x86_64-pc-windows-gnu\lib`
-4. Rename `libeay32.a` and `ssleay32.a` to `libcrypto.a` and `libssl.a`,
-respectively.
 5. Run `cargo build`.
 
 ###Testing

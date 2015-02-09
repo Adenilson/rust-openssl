@@ -19,7 +19,7 @@ fn main() {
     }
 
     if target.contains("win32") || target.contains("win64") {
-        println!("cargo:rustc-flags=-l crypto -l ssl -l gdi32 -l wsock32");
+        println!("cargo:rustc-flags=-l eay32 -l leay32 -l gdi32 -l wsock32");
         return;
     }
 
